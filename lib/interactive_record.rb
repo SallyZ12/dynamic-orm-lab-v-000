@@ -60,7 +60,7 @@ class InteractiveRecord
 
 
   def self.find_by(attribute)
-    # binding.pry
+    binding.pry
     key = attribute.keys.first
     value = attribute.values.first
 
