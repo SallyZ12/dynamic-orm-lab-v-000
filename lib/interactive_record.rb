@@ -60,7 +60,6 @@ class InteractiveRecord
 
 
   def self.find_by(attribute)
-
     key = attribute.keys.first
     value = attribute.values.first
     formatted_value = value.class == Fixnum ? value : "'#{value}'"
