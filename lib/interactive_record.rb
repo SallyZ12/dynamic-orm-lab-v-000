@@ -63,7 +63,7 @@ class InteractiveRecord
 
     key = attribute.keys.first
     value = attribute.values.first
-    formatted_value = value.class == Fixnum ? value: "'#{value}'"
+    formatted_value = value.class == Fixnum ? value : "'#{value}'"
     binding.pry
     sql = "SELECT * FROM #{self.table_name} WHERE #{key} = #{formatted_value}"
     DB[:conn].execute(sql)
