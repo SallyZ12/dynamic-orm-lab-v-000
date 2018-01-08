@@ -60,7 +60,7 @@ class InteractiveRecord
 
 
   def self.find_by(attribute)
-    binding.pry
+    # binding.pry
     value = attribute.values.first
     key = attribute.keys.first
     sql = "SELECT * FROM #{self.table_name} WHERE #{key} = #{value}"
