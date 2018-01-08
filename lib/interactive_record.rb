@@ -67,7 +67,6 @@ class InteractiveRecord
     binding.pry
     sql = "SELECT * FROM #{self.table_name} WHERE #{key} = #{formatted_value}"
     DB[:conn].execute(sql)
-
   end
 
 
